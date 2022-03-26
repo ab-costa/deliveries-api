@@ -22,7 +22,7 @@ public class DeliveryMan {
 	@Column(name = "email", length = 150, nullable = false)
 	private String email;
 	
-	@Column(name = "password", length = 8, nullable = false)
+	@Column(name = "password", columnDefinition = "text", nullable = false)
 	private String password;
 	
 
