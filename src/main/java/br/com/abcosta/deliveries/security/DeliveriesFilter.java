@@ -17,7 +17,7 @@ public class DeliveriesFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println(">>>>>>> REQUISÇÃO PASSANDO PELO FILTRO");
+		System.out.println(">>>>>>> REQUISIÇÃO PASSANDO PELO FILTRO");
 		
 		if (request.getHeader("Authorization") != null) {
 			Authentication authentication = TokenUtil.validateToken(request);

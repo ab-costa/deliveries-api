@@ -6,4 +6,5 @@ import br.com.abcosta.deliveries.model.DeliveryMan;
 
 public interface DeliveryManDAO extends CrudRepository<DeliveryMan, Integer> {
 
+	public DeliveryMan findByEmail(String email);
 }

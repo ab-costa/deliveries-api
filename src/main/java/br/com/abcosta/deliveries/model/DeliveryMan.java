@@ -25,6 +25,20 @@ public class DeliveryMan {
 	@Column(name = "password", columnDefinition = "text", nullable = false)
 	private String password;
 	
+	
+	public DeliveryMan() {
+		super();
+	}
+		
+	public DeliveryMan(Integer id, String name, String email, String password) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+	}
+
+
 
 	public Integer getId() {
 		return id;

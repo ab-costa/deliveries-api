@@ -31,6 +31,7 @@ public class TokenUtil {
 
 
 	public static String createToken(DeliveryMan deliveryMan) {
+		System.out.println(">>>>>>> TOKEN UTIL CLASS | CREATE TOKEN METHOD");
 		Key secretKey = Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
 		
 		String token = Jwts.builder().setSubject(deliveryMan.getName())
