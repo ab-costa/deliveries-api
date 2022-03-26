@@ -19,7 +19,7 @@ public class DeliveryMan {
 	@Column(name = "name", length = 150, nullable = false)
 	private String name;
 	
-	@Column(name = "email", length = 150, nullable = false)
+	@Column(name = "email", length = 150, nullable = false, unique = true)
 	private String email;
 	
 	@Column(name = "password", columnDefinition = "text", nullable = false)
