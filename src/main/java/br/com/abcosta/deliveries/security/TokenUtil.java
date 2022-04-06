@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 
-import br.com.abcosta.deliveries.model.DeliveryMan;
+import br.com.abcosta.deliveries.model.DeliveryPerson;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
@@ -30,7 +30,7 @@ public class TokenUtil {
 	private static final String ISSUER = "83b483a36193c3ce03c8cec39df0db8e";
 
 
-	public static String createToken(DeliveryMan deliveryMan) {
+	public static String createToken(DeliveryPerson deliveryMan) {
 		System.out.println(">>>>>>> TOKEN UTIL CLASS | CREATE TOKEN METHOD");
 		Key secretKey = Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
 		

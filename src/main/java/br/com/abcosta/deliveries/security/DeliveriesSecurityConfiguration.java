@@ -23,7 +23,8 @@ public class DeliveriesSecurityConfiguration extends WebSecurityConfigurerAdapte
 							.authenticationEntryPoint(entryPoint)
 							.and()
 							.authorizeRequests()
-							.antMatchers(HttpMethod.GET, "/entregadores").permitAll()
+							.antMatchers(HttpMethod.GET, "/admin/entregadores").permitAll()
+							.antMatchers(HttpMethod.POST, "/entregadoresteste").permitAll()
 							.antMatchers(HttpMethod.POST, "/login*").permitAll()
 							.anyRequest().authenticated().and().cors();
 		

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "couriers")
-public class DeliveryMan {
+public class DeliveryPerson {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,21 +24,18 @@ public class DeliveryMan {
 	
 	@Column(name = "password", columnDefinition = "text", nullable = false)
 	private String password;
-	
-	
-	public DeliveryMan() {
+		
+	public DeliveryPerson() {
 		super();
 	}
 		
-	public DeliveryMan(Integer id, String name, String email, String password) {
+	public DeliveryPerson(Integer id, String name, String email, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.password = password;
 	}
-
-
 
 	public Integer getId() {
 		return id;
