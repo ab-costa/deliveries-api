@@ -1,4 +1,4 @@
-package br.com.abcosta.deliveries.model;
+ package br.com.abcosta.deliveries.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "couriers")
+@Table(name = "delivery_person")
 public class DeliveryPerson {
 
 	@Id

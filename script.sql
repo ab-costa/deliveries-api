@@ -1,4 +1,3 @@
-createdb deliveries;
 
 create table delivery_person(
     id serial not null primary key,
@@ -6,8 +5,6 @@ create table delivery_person(
     email varchar(150) not null unique,
     password varchar(8) not null
 );
-
-alter table couriers rename to delivery_person;
 
 create table customers(
 	id serial not null primary key,
